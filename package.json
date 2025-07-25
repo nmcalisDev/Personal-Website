@@ -2,13 +2,16 @@
   "name": "personal-website",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "serve ."
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.54.1",
-    "@types/node": "^24.0.13"
+    "@types/node": "^24.0.13",
+    "serve": "^14.2.4"
   }
 }
