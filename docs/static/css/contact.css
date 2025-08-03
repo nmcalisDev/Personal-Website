@@ -93,12 +93,12 @@ input#name.form-control {
   margin-top: 15px;
   height: 34px;
   overflow: hidden;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .alt-send-button {
   height: 34px;
-  transition: all .2s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .send-text {
