@@ -1,0 +1,83 @@
+.c-hero-about {
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+  padding-top: 95px;
+}
+
+.c-hero__box-about {
+  padding: 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.c-hero__title-about {
+    color: #232320;
+    font-family: "Libre Baskerville", serif;
+    font-size: 3.5em;
+    letter-spacing: -1.5px;
+    line-height: 130%;
+    margin-top: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.c-hero__text-about {
+    color: #656270;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin: 1em 0 0;
+    transition: all .2s ease-in-out;
+}
+
+@media (min-width: 1700px) {
+  .c-hero__box-about {
+    padding: 20px 50em 270px 6em;
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .c-hero__box-about {
+    padding: 3em 7em 3em 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .c-hero__box-about {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 544px) {
+  .c-hero__box-about {
+    padding: 2em 0 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .c-hero__title-about {
+    color: #fff;
+    background: linear-gradient(270deg, #a0e9ff 40%, #a162e8 55%, #f093b0 75%, #edca85 96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (min-width: 1600px) {
+  .c-hero__title-about {
+    font-size: 4.5em;
+    letter-spacing: -3px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .c-hero__title-about {
+    font-size: 2.5em;
+  }
+}
