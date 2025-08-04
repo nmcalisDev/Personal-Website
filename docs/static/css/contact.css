@@ -120,7 +120,7 @@ input#name.form-control {
 /* Location, Email Section */
 .contact-list {
   list-style-type: none;
-  margin-left: -30px;
+  margin-left: 0px;
   padding-right: 20px;
 }
 
