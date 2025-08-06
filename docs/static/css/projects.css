@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.page-center {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-hero-projects {
+  display: flex;
+  width: 80vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  padding-top: 95px;
+}
+
+.c-hero-projects-sidebar {
+  width: 200px;
+  color: #fff;
+  padding-top: 95px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: sticky;
+  top: 95px;
+  height: 60vh;
+}
+
+.c-hero-projects-sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.c-hero-projects-sidebar a:hover {
+    text-decoration: underline;
+}
+
+.scrollable-content {
+    flex: 1;
+    overflow-y: auto;
+    height: 60vh;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.section {
+    height: 60vh;
+    margin-bottom: 60vh;
+    border: 1px solid #ccc;
+}
+
+
+.section:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+.section:nth-child(even) {
+    background: #e0e0e0;
+}
