@@ -33,25 +33,47 @@ html, body {
 }
 
 .c-hero-projects-sidebar {
+  color: #232320; /* or match to your nav link color */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 3.5;
   width: 200px;
   color: #fff;
-  padding-top: 95px;
+  padding-top: 20px;
   box-sizing: border-box;
   overflow: hidden;
   position: sticky;
-  top: 95px;
   height: 60vh;
+}
+
+.c-hero-projects-sidebar a span {
+  position: relative;
+  z-index: 10;
+}
+
+.c-hero-projects-sidebar a span::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #ffc4ff;
+  transform: translate3d(0,5px,0);
+  transition: all 0.2s cubic-bezier(.175, .885, .32, 1.275);
+  opacity: 0;
+  z-index: 5;
+}
+
+.c-hero-projects-sidebar a:hover span::before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(1deg);
 }
 
 .c-hero-projects-sidebar a {
     display: block;
     color: white;
     text-decoration: none;
-    margin: 10px 0;
-}
-
-.c-hero-projects-sidebar a:hover {
-    text-decoration: underline;
 }
 
 .scrollable-content {
