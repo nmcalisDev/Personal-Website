@@ -3,6 +3,10 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./static/css/main.css">
         <link rel="stylesheet" type="text/css" href="./static/css/projects.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
         <title>Nathan McAlister | Projects</title>
     </head>
@@ -67,44 +71,224 @@
             </nav>
         </header>
         <div class="page-center">
-            <div class="border-wrapper">
-                <section class="c-hero-projects">
-                    <div class="c-hero-projects-sidebar">
-                        <a href="#project-content-1"><span>Vibe Web Dev</span></a>
-                        <a href="#project-content-2"><span>Game Boy Repairman</span></a>
-                        <a href="#project-content-3"><span>3D Printing</span></a>
-                        <a href="#project-content-4"><span>Raspberry Pi</span></a>
-                        <a href="#project-content-5"><span>Custom PCs</span></a>
-                        <a href="#project-content-6"><span>Cheat Engine</span></a>
-                    </div>
-                    <div class="scrollable-content" id="scroll-window">
-                        <div class="project-content" id="project-content-1">
-                            <div class="project-content-image">
-                                <img src="./static/files/images/vibe-coding.png" alt="Vibe Web Dev Screenshot">
-                            </div>
-                            <div class="project-right">
-                                <div class="project-content-header">
-                                    <h2>Vibe Web Dev</h2>
-                                </div>
-                                <div class="project-content-text">
-                                    <p>I built this website to explore and learn about AI tools like ChatGPT 
-                                        and GitHub Copilot. With minimal prior experience in web development, I 
-                                        relied heavily on AI assistance—about 80% of the code, including all 
-                                        the CSS, most of the HTML, and many of the images, was generated with 
-                                        the help of these tools. This project shows how AI can empower developers 
-                                        to create complex websites quickly and effectively.</p>
-                                    <p>Technologies used: HTML, CSS, JavaScript.</p>
-                                </div>
+            <section class="c-hero-projects">
+                <div class="c-hero-projects-sidebar">
+                    <a href="#project-content-1"><span>Vibe Web Dev</span></a>
+                    <a href="#project-content-2"><span>GameBoy Repairman</span></a>
+                    <a href="#project-content-3"><span>3D Printing</span></a>
+                    <a href="#project-content-4"><span>Raspberry Pi</span></a>
+                    <a href="#project-content-5"><span>Custom PCs</span></a>
+                    <a href="#project-content-6"><span>Cheat Engine</span></a>
+                </div>
+                <div class="scrollable-content" id="scroll-window">
+                    <div class="project-content" id="project-content-1">
+                        <div class="project-content-left">
+                            <div class="image-container">
+                                <button id="prevBtn" class="carousel-btn prev">&#10094;</button>
+                                <img id="carouselImage" src="./static/files/images/vibe-coding-1.png" alt="Window View">
+                                <button id="nextBtn" class="carousel-btn next">&#10095;</button>
                             </div>
                         </div>
-                        <div class="project-content" id="project-content-2"><h2>Game Boy Repairman</h2><p>More content.</p></div>
-                        <div class="project-content" id="project-content-3"><h2>3D Printing</h2><p>Even more content.</p></div>
-                        <div class="project-content" id="project-content-4"><h2>Raspberry Pi</h2><p>Last bit of content.</p></div>
-                        <div class="project-content" id="project-content-5"><h2>Custom PCs</h2><p>Even more content.</p></div>
-                        <div class="project-content" id="project-content-6"><h2>Cheat Engine</h2><p>Last bit of content.</p></div>
+                        <div class="project-content-right">
+                            <h1 class="project-content-header">Vibe Web Dev</h1>
+                            <div class="project-content-text">
+                                <p>I built this website to explore and learn about AI tools like ChatGPT 
+                                    and GitHub Copilot. With minimal prior experience in web development, I 
+                                    relied heavily on AI assistance—about 80% of the code, including all 
+                                    the CSS, most of the HTML, and many of the images, was generated with 
+                                    the help of these tools. This project shows how AI can empower developers 
+                                    to create complex websites quickly and effectively.</p>
+                            </div>
+                            <div class="project-content-icons">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <i class="fab fa-css3 fa-2x"></i>
+                                <i class="fab fa-js fa-2x"></i>
+                                <a href="https://github.com/nmcalisDev/Personal-Website" target="_blank" rel="noopener" class="icon-link">
+                                    <i class="fab fa-github fa-2x github"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </div>
+                    <div class="project-content" id="project-content-2">
+                        <div class="project-content-left">
+                            <div class="image-container">
+                                <button id="prevBtn" class="carousel-btn prev">&#10094;</button>
+                                <img id="carouselImage" src="./static/files/images/vibe-coding-1.png" alt="Window View">
+                                <button id="nextBtn" class="carousel-btn next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div class="project-content-right">
+                            <h1 class="project-content-header">GameBoy Repairman</h1>
+                            <div class="project-content-text">
+                                <p>I restore broken Game Boys purchased from eBay, a hobby that has developed 
+                                    my technical abilities. Through these projects I’ve gained experience in 
+                                    safely removing electronic components, soldering and installing replacements, 
+                                    and repairing or upgrading screens for improved performance. Much of my 
+                                    learning has been guided by Odd Tinkering’s excellent repair tutorials on 
+                                    YouTube, which have been invaluable in building my repair expertise.</p>
+                            </div>
+                            <div class="project-content-icons">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <i class="fab fa-css3 fa-2x"></i>
+                                <i class="fab fa-js fa-2x"></i>
+                                <a href="https://github.com/nmcalisDev/Personal-Website" target="_blank" rel="noopener" class="icon-link">
+                                    <i class="fab fa-github fa-2x github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content" id="project-content-3">
+                        <div class="project-content-left">
+                            <div class="image-container">
+                                <button id="prevBtn" class="carousel-btn prev">&#10094;</button>
+                                <img id="carouselImage" src="./static/files/images/vibe-coding-1.png" alt="Window View">
+                                <button id="nextBtn" class="carousel-btn next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div class="project-content-right">
+                            <h1 class="project-content-header">Vibe Web Dev</h1>
+                            <div class="project-content-text">
+                                <p>I built this website to explore and learn about AI tools like ChatGPT 
+                                    and GitHub Copilot. With minimal prior experience in web development, I 
+                                    relied heavily on AI assistance—about 80% of the code, including all 
+                                    the CSS, most of the HTML, and many of the images, was generated with 
+                                    the help of these tools. This project shows how AI can empower developers 
+                                    to create complex websites quickly and effectively.</p>
+                            </div>
+                            <div class="project-content-icons">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <i class="fab fa-css3 fa-2x"></i>
+                                <i class="fab fa-js fa-2x"></i>
+                                <a href="https://github.com/nmcalisDev/Personal-Website" target="_blank" rel="noopener" class="icon-link">
+                                    <i class="fab fa-github fa-2x github"></i>
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="project-content" id="project-content-4">
+                        <div class="project-content-left">
+                            <div class="image-container">
+                                <button id="prevBtn" class="carousel-btn prev">&#10094;</button>
+                                <img id="carouselImage" src="./static/files/images/vibe-coding-1.png" alt="Window View">
+                                <button id="nextBtn" class="carousel-btn next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div class="project-content-right">
+                            <h1 class="project-content-header">Vibe Web Dev</h1>
+                            <div class="project-content-text">
+                                <p>I built this website to explore and learn about AI tools like ChatGPT 
+                                    and GitHub Copilot. With minimal prior experience in web development, I 
+                                    relied heavily on AI assistance—about 80% of the code, including all 
+                                    the CSS, most of the HTML, and many of the images, was generated with 
+                                    the help of these tools. This project shows how AI can empower developers 
+                                    to create complex websites quickly and effectively.</p>
+                            </div>
+                            <div class="project-content-icons">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <i class="fab fa-css3 fa-2x"></i>
+                                <i class="fab fa-js fa-2x"></i>
+                                <a href="https://github.com/nmcalisDev/Personal-Website" target="_blank" rel="noopener" class="icon-link">
+                                    <i class="fab fa-github fa-2x github"></i>
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="project-content" id="project-content-5">
+                        <div class="project-content-left">
+                            <div class="image-container">
+                                <button id="prevBtn" class="carousel-btn prev">&#10094;</button>
+                                <img id="carouselImage" src="./static/files/images/vibe-coding-1.png" alt="Window View">
+                                <button id="nextBtn" class="carousel-btn next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div class="project-content-right">
+                            <h1 class="project-content-header">Vibe Web Dev</h1>
+                            <div class="project-content-text">
+                                <p>I built this website to explore and learn about AI tools like ChatGPT 
+                                    and GitHub Copilot. With minimal prior experience in web development, I 
+                                    relied heavily on AI assistance—about 80% of the code, including all 
+                                    the CSS, most of the HTML, and many of the images, was generated with 
+                                    the help of these tools. This project shows how AI can empower developers 
+                                    to create complex websites quickly and effectively.</p>
+                            </div>
+                            <div class="project-content-icons">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <i class="fab fa-css3 fa-2x"></i>
+                                <i class="fab fa-js fa-2x"></i>
+                                <a href="https://github.com/nmcalisDev/Personal-Website" target="_blank" rel="noopener" class="icon-link">
+                                    <i class="fab fa-github fa-2x github"></i>
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="project-content" id="project-content-6">
+                        <div class="project-content-left">
+                            <div class="image-container">
+                                <button id="prevBtn" class="carousel-btn prev">&#10094;</button>
+                                <img id="carouselImage" src="./static/files/images/vibe-coding-1.png" alt="Window View">
+                                <button id="nextBtn" class="carousel-btn next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div class="project-content-right">
+                            <h1 class="project-content-header">Vibe Web Dev</h1>
+                            <div class="project-content-text">
+                                <p>I built this website to explore and learn about AI tools like ChatGPT 
+                                    and GitHub Copilot. With minimal prior experience in web development, I 
+                                    relied heavily on AI assistance—about 80% of the code, including all 
+                                    the CSS, most of the HTML, and many of the images, was generated with 
+                                    the help of these tools. This project shows how AI can empower developers 
+                                    to create complex websites quickly and effectively.</p>
+                            </div>
+                            <div class="project-content-icons">
+                                <i class="fab fa-html5 fa-2x"></i>
+                                <i class="fab fa-css3 fa-2x"></i>
+                                <i class="fab fa-js fa-2x"></i>
+                                <a href="https://github.com/nmcalisDev/Personal-Website" target="_blank" rel="noopener" class="icon-link">
+                                    <i class="fab fa-github fa-2x github"></i>
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </section>
         </div>
+        <script>
+            const images = [
+                "./static/files/images/vibe-coding-1.png"
+            ];
+
+            let currentIndex = 0;
+
+            const carouselImage = document.getElementById("carouselImage");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+
+            function showImage(index) {
+                carouselImage.src = images[index];
+            }
+
+            // Show initial image
+            showImage(currentIndex);
+
+            if (images.length > 1) {
+                // Only enable carousel if more than one image
+                prevBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showImage(currentIndex);
+                });
+
+                nextBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showImage(currentIndex);
+                });
+
+                prevBtn.style.display = "inline-block";
+                nextBtn.style.display = "inline-block";
+            } else {
+                // Hide buttons if only one image
+                prevBtn.style.display = "none";
+                nextBtn.style.display = "none";
+            }
+        </script>
     </body>
 </html>

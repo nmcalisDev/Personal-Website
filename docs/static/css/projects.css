@@ -86,45 +86,91 @@ html, body {
   overflow: hidden;
   height: 100%;
   margin-bottom: 60vh;
-  padding: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
   background: linear-gradient(90deg,#edca85 14%, #f093b0 75%);
 }
 
-
-.project-content-image {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-  overflow: hidden;
+/* Left Pane */
+.project-content-left {
+    display: flex;
+    align-items: center;           /* vertically center image */
+    justify-content: center;       /* horizontally center image */
+    width: 50%;
+    padding-right: 12px;
+    overflow: hidden;              /* prevent overflow */
+    position: relative;
+    box-sizing: border-box;
 }
 
-.project-content-image img {
-  max-width: 100%;
-  max-height: 100%;
-  border: #111 4px solid;
-  border-radius: 12px;
-  object-fit: contain;
+/* Image Container */
+.image-container {
+    position: relative;
+    display: block;         /* shrink to fit image */
+    max-width: 100%;               /* respect parent width */
+    max-height: 100%;              /* respect parent height */
 }
 
-.project-right {
+/* Image itself */
+.image-container img {
+    display: block;
+    max-width: 100%;               /* fit horizontally */
+    max-height: 55vh;              /* fit vertically */
+    width: auto;
+    height: auto;
+    object-fit: contain;           /* preserve aspect ratio */
+    border: #111 4px solid;
+    border-radius: 12px;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    bottom: 10px;                  /* stay at bottom of image */
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Right Pane */
+
+.project-content-right {
   flex: 1;
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding-left: 12px;
 }
 
 .project-content-header {
-  color: #111;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  line-height: 1.5;
-  text-align: center;
+  display: flex;
+  min-height: 30%;
+  font-family: 'Anton', sans-serif;
+  font-size: 4.5em;
+  color: #111;    /* optional: color */
+  align-items: center;   /* vertical center */
+  justify-content: center; /* horizontal center */
   flex: 0 0 auto;
 }
 
 .project-content-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   flex: none;
   align-self: flex-start;
   display: block;
@@ -132,7 +178,28 @@ html, body {
   gap: 1rem;
   padding: 1rem;
   overflow: visible;
-  background: linear-gradient(270deg, #db85b4, #b097f2);
+  background: #b097f2;
+  /* background: linear-gradient(90deg, #A0D8F1, #b097f2); */
   border: #111 4px solid;
   border-radius: 12px;
+}
+
+.project-content-icons {
+    color: #111;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.project-content-icons .github {
+  margin-left: 40px; /* extra spacing before GitHub */
+}
+
+.icon-link i {
+    color: #111;       /* make the GitHub icon black */
+}
+
+.icon-link {
+    text-decoration: none;  /* remove underline */
 }
